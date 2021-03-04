@@ -1,0 +1,93 @@
+#screenDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+#titleDiv {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#titleText {
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+#inputDiv {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+#searchBar {
+    align-content: center;
+    margin: auto;
+    margin-right: 3px;
+}
+
+#searchBtn {
+    align-content: center;
+    margin: auto;
+    margin-left: 2px;
+}
+
+#outputDiv {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+#basicInfoDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#relativeInfoDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#relativeDiv0 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#relativeDiv1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}

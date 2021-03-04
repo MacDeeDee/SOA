@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="{{ url_for('static', filename= 'scripts/getStudent.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'stylesheets/getStudent.css') }}">
+    <title>Get student information.</title>
+</head>
+<body>
+    <div id="screenDiv">
+        <div id="titleDiv">
+            <h1 id="titleText">Get student information</h1>
+        </div>
+        <div id="inputDiv">
+            <input id="searchBar" type="text" placeholder="Enter student ID to search..." />
+            <button id="searchBtn" type="searchButton" onclick="display();">Search</button>
+        </div>
+        <div id="outputDiv">
+            <div id="basicInfoDiv">
+                <table id="basicInfoTable">
+                    <tr>
+                        <th>Personal information:</th>
+                    </tr>
+                    <tr>
+                        <td>Student ID: </td>
+                        <td id="SID"></td>
+                    </tr>
+                    <tr>
+                        <td>Name: </td>
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender: </td>
+                        <td id="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth: </td>
+                        <td id="DOB"></td>
+                    </tr>
+                    <tr>
+                        <td>Email(s): </td>
+                        <td id="email"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="relativeInfoDiv">
+                <div id="relativeDiv0">
+                    <table id="relative0">
+                        <tr>
+                        <th>Relative 1:</th>
+                        </tr>
+                        <tr>
+                            <td>Relationship: </td>
+                            <td id="relationship0"></td>
+                        </tr>
+                        <tr>
+                            <td>Name: </td>
+                            <td id="relName0"></td>
+                        </tr>
+                        <tr>
+                            <td>Address: </td>
+                            <td id="add0"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="relativeDiv1">
+                    <table id="relative1">
+                        <tr>
+                        <th>Relative 2:</th>
+                        </tr>
+                        <tr>
+                            <td>Relationship: </td>
+                            <td id="relationship1"></td>
+                        </tr>
+                        <tr>
+                            <td>Name: </td>
+                            <td id="relName1"></td>
+                        </tr>
+                        <tr>
+                            <td>Address: </td>
+                            <td id="add1"></td>
+                        </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
