@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+
+service getStudent {
+  rpc getByID(inputSID) returns (studentInfo) {}
+}
+
+message inputSID {
+  uint64 sid = 1;
+}
+
+message studentInfo {
+  uint64 sid = 1;
+  string name = 2;
+  string gender = 3;
+  string dob = 4;
+  repeated string email = 5;
+  repeated relative person = 6;
+}
+
+message relative {
+  string relationship = 1;
+  string relaName = 2;
+  string address = 3;
+}

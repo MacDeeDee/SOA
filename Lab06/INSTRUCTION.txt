@@ -1,0 +1,29 @@
+SOA GRPC:
+0. Yêu cầu:
+- Đã cài Pythom 3.8+
+- Đã cài MySQL 8.0.15+
+- Python virtual environment phải được cài grpcio, grpcio-tools, mysql-connector-python.
+
+1. Cách chạy:
+- Nên dùng Jetbrain Pycharm (Pro hoặc edu)
+- Cách chạy mã nguồn API:
++ Open project API bằng Pycharm
++ Bấm nút thứ ba từ phải sang bên góc dưới cùng bên phải của cửa sổ vừa mở, chọn "Interpreter Settings...", trong bảng vừa hiện lên, trong ô màn hình chính định vị dòng "Python Interpreter", trên cùng dòng phía tận cùng bên phải là nút hình bánh răng, bấm vào đó, chọn "Add". Cửa sổ mới hiện ra, bên ô bên trái chọn "Vỉtualenv Environment", nhìn sang ô bên phải, bấm vào lựa chọn "Existing environment", bấm "...". Cửa sổ chọn file mở ra, trỏ tới <nơi tải dự án này>/API/venv/bin/python ("python" là 1 file chứ ko phải là một folder). Bấm các nút OK để xác nhận và tắt các cửa sổ vừa mở.
+- Cài đặt cơ sở dữ liệu:
++ Đặt password là "test.Pasword"
++ Trỏ tới <nơi tải dự án này>/DB
++ Chạy file "SOA.sql" để tạo model 
++ Chạy file "INIT_VALUES.sql" để đặt giá trị mặc định để thử
+- Quay lại cửa sổ Pycharm, bấm dropdown menu ở toolbar trên cùng (cạnh nút chạy), chọn "app", bấm nút chạy.
+- API sẽ chạy liên tục cho tới khi tắt thủ công, vì nó luôn lắng nghe request.
+- Cách chạy mã nguồn Desktop App:
++ Open project DESKTOP_APP bằng Pycharm
++ Lựa chọn/tạo mới  virtual environment phù hợp với yêu cầu nêu trên.
+
+2. Protobuf message:
+- Được lưu hai bản như nhau trong thư mục "./proto" ở cả folder API (server) và COMMANDLINE_APP (client).
+- Tương tự các class được dịch từ protobuf sang cũng được lưu hai bản như nhau ở trong cả server lẫn client.
+
+3. Hình ảnh chạy mã nguồn trong thực tế: 
+- Hình ảnh Server chạy thực tế nằm trong thư mục "~/ImageInAction" với tên tên file "Server.png".
+- Hình ảnh chạy thực tế của Command line App nằm trong thư mục "~/ImageInAction" với tên tên file "Client.png".
